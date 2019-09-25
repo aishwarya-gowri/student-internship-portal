@@ -1,0 +1,150 @@
+<html>
+<head>
+	    <title>SIGNUP</title>
+	<style>
+	
+a:link{font-weight:bold;color:white;font-family:'Comic Sans MS';text-decoration:none;}
+a:visited{color:white;}
+
+a:hover{color:red;}
+
+image1{margin-left:20px;margin-right:20px;}
+
+*{box-sizing: border-box;}
+
+.bottom{background-color:#FDEDEC;width:400px}
+
+li{list-style-type:none;}
+
+li:before{content: "\25BA \0020";}
+      
+		img
+			{
+				float:left;
+			}
+
+        div.d
+			{
+				margin-left:3in;
+				margin-right:3in;
+				font-family:'Comic Sans MS';
+				max-width:1000px;
+				padding:100px;
+             }
+		 
+		 * {box-sizing: border-box;}
+		 
+		.myform
+			{
+                background-color:#FFFAF0;
+				margin:0px 30px;
+				position:relative;
+				top:0px;
+				width:400px;
+				padding: 5px;
+			}
+				
+		input
+			{
+                background-color: #f1f1f1;
+                color:black;
+				padding: 15px;
+				margin: 6px 15px;
+				border:none;
+			}	
+		input:focus 
+			{
+				background-color: #ddd;
+			}	
+		label
+		{
+			position:relative;
+			left:15px;
+			font-size:18px;
+		}
+		input
+		{
+			width:90%;
+			position:relative;
+			left:0px;
+		}
+       
+	</style>
+	</head>
+	<body>
+	        <!--background color-->
+		
+		<!--headers-->
+		<p style="background-color:teal;position:absolute;width:1535px;height:144%;
+		top:-15px;left:0px;opacity:0.45;z-index:1">	
+		
+		
+			
+			<a href="homepage.html" style="position:absolute;right:640px;top:20px;">HOME</a>
+			<a href="loginpage.html" style="position:absolute;right:450px;top:20px;">STUDENT LOGIN</a>
+			<a href="https://bmscealumni.net/updates" 
+			style="position:absolute;right:335px;top:20px;">ALUMNI</a>
+			<a href="http://bmsce.in/placement-center" 
+			style="position:absolute;right:180px;top:20px;">CONTACT US</a>
+		</p>
+		
+		
+		<!--for logo-->
+		
+		<img src="bmslogo.png" width="15%" style="float:left;position:absolute;top:50px;
+		left:70px;z-index:1;">
+		
+		<!--headings-->
+		<label style="color:white;font-family:'Comic Sans MS';font-size:26px;
+		position:absolute;top:70px;left:240px;z-index:1;">
+			<b>Internship and Placement office</b>
+		</label>
+		<label style="color:white;font-family:'Comic Sans MS';font-size:16px;
+		position:absolute;top:115px;left:280px;z-index:1;">
+			<b>BMS COLLEGE OF ENGINEERING</b>
+		</label>
+		
+		<p>
+		
+		<!--background image-->
+		
+		<img id="image1"src="bmsce.jpg" width="1535px" height="145%" style="opacity:0.9;
+		position:absolute;top:0px;left:0px;z-index:0">
+		
+		</p>
+						 							
+				<div class="d">							
+                            				
+					<form action="sign.php" method="post" class="myform" style="position:absolute;left:500px;top:200px;
+					height:780px;z-index:2;">
+						<h2><center>SIGN-UP</center></h2>
+							
+							<label><b>Name</b></label><br>
+							<input type="text" id="t1" size="20" name="username" placeholder="Enter your name"><br><br>
+							
+							<label><b>USN</b></label><br>
+							<input type="text" id="t2" size="20" name="usn" placeholder="Enter your usn"><br><br>
+							
+							<label><b>Phone no</b></label><br>
+							<input type="text" id="t5" name="number" placeholder="Enter your contact no"><br><br>
+							
+							<label><b>Email-id</b></label><br>
+							<input type="text" id="t6" name="mail" placeholder="Enter valid email-id"><br><br>
+							
+							<label><b>Password</b></label><br>
+							<input type="password" id="p1" name="pwd1"><br><br>
+							
+							<label><b>Confirm Password</b></label><br>
+							<input type="password" id="p2" name="pwd2">
+							
+							<center>
+								<input type="submit" value="Submit" style="background-color: #4CAF50;
+									color:white;padding:5px;font-size:18px;font-family:'Comic Sans MS';
+									width:100px;border:none;position:relative;top:20px;left:0px"/>
+							</center>
+					
+					</form>
+			    
+              </div>
+    </body>
+	</html>
