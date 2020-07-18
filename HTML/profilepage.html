@@ -1,0 +1,317 @@
+<html>
+
+<head>
+
+<title> Profile page</title>
+
+<script type="text/javascript">
+function addRow(tableID) {
+
+			var table = document.getElementById(tableID);
+
+			var rowCount = table.rows.length;
+			var row = table.insertRow(rowCount);
+
+			var cell1 = row.insertCell(0);
+			var element1 = document.createElement("input");
+			element1.type = "text";
+			element1.name="sem";
+			cell1.appendChild(element1);
+
+			var cell2 = row.insertCell(1);
+			var element2 = document.createElement("input");
+			element2.type = "text";
+			element2.name="companyname";
+			cell2.appendChild(element2);
+
+			var cell3 = row.insertCell(2);
+			var element3 = document.createElement("input");
+			element3.type = "text";
+			element3.name="stipend";
+			cell3.appendChild(element3);
+			
+			var cell4 = row.insertCell(3);
+			var element4 = document.createElement("input");
+			element4.type = "text";
+			element4.name="duration";
+			cell4.appendChild(element4);
+		}
+
+		
+</script>
+
+<style>
+
+a:link{font-weight:bold;color:white;font-family:'Comic Sans MS';text-decoration:none;}
+
+a:visited{color:white;}
+
+a:hover{color:red;}
+
+*{font-family:'Verdana';}
+
+#header
+{
+	background-color:#EC7063;
+	position:absolute;
+	width:1135px;
+	height:60px;
+	top:-18px;
+	left:0px;
+	opacity:0.6;
+	z-index:1;
+	margin-left:400px;
+}
+#info
+{
+	background-color:#FEF5E7;
+	position:relative;
+	top:-8px;
+	left:-8px;
+	width:400px;
+	height:735px;
+}	
+p.h1
+{
+	font-family:'Verdana';
+	font-size:24px;
+	position:relative;
+	left:100px
+}	
+
+input[type="text"]
+{
+	border:none;
+}
+
+#t1,#t2,#t3,#t4,#t5
+	{
+                background-color:#FEF5E7;
+                color:black;
+				padding: 15px;
+				margin: 6px 15px;
+				border:none;
+	}	
+		
+		label
+		{
+			position:relative;
+			left:15px;
+			font-size:18px;
+		}
+		
+		#edit
+		{
+			position:relative;left:270px;top:20px; 
+			width:80px;height:30px;
+			font-size:20px;background-color:#17202A;color:white;
+			border:none;
+		}
+		
+		#right
+		{
+			background-color:#FEF5E7;
+			font-size:18px;
+			position:absolute;
+			top:58px;
+			right:0px;
+		}
+
+		#table1
+		{
+			
+			position:absolute;
+			top:200px;left:470px;
+			
+		}
+		table input
+		{
+			height:30px;
+			width:150px;
+			border:none;
+			text-align:center;
+		}
+
+</style>
+
+</head>
+
+<body>
+
+<!--headers-->
+
+<p id="header">
+			
+			<a href="homepage.html" style="position:absolute;right:350px;top:20px;">HOME</a>
+			<a href="loginpage.html" style="position:absolute;right:240px;top:20px;">LOGOUT</a>
+			<a href="http://bmsce.in/placement-center" 
+				style="position:absolute;right:90px;top:20px;">CONTACT US</a>
+</p>
+
+<!--user info to the left-->
+
+<div id="info">
+
+		<br/><br/><br/><br/><br/>
+
+		<img class="avatarimage" src="avatar.png" style="width:40%;position:relative;top:10px;left:110px"/>			
+
+		<br/>
+
+		<p class="h1">USER PROFILE</p>
+
+		<form action="" class="myform">
+				
+				
+				<div style="margin-left:25px;">
+				<label><b>Name</b></label>
+				<input type="text" id="t1" size="20" placeholder="Enter your name"
+				style="position:relative;width:50%;left:45px;"><br/>
+							
+				<label><b>USN</b></label>
+				<input type="text" id="t2" size="20" placeholder="Enter your usn"
+				style="position:relative;width:50%;left:60px;"><br/>
+							
+				<label><b>Phone no</b></label>
+				<input type="text" id="t3" placeholder="Enter your contact no"
+				style="position:relative;width:50%;left:7px;"><br/>
+							
+				<label><b>Email-id</b></label>
+				<input type="text" id="t4" placeholder="Enter valid email-id"
+				style="position:relative;width:50%;left:18px;"><br/>
+							
+				<label><b>Year</b></label>
+				<input type="text" id="t5" placeholder="Enter your year"
+				style="position:relative;width:50%;left:55px;"><br/>
+				</div>			
+						
+							
+		</form>
+</div>
+
+<!--right info-->
+
+<div id="right">
+
+<br/>
+
+<p style="position:relative;left:15px;">COMPANIES OFFERING INTERSHIPS</p>
+
+<ol style="position:relative;top:20px;height:578px;">
+	<li>	McKinsey Digital Labs</li>
+	<li>	National Instruments </li>
+	<li>	Nutanix India Pvt Ltd </li>
+	<li>	Walmart Labs</li>
+	<li>	L&T Technology Services</li>
+	<li>	Endurance International group</li>
+	<li>	Sabre Travel Technologies</li>
+	<li>	Magnitude Software</li>
+	<li>	CISCO</li>
+	<li>	Amazon</li>
+	<li>	Flipkart</li>
+	<li>	Endurance</li>
+	<li>	McAfee</li>
+	<li>	Sahaj Software Solutions</li>
+	<li>	Accenture</li>
+	<li>	Amadeus Software Labs</li>
+	<li>	Ola</li>
+	<li>	Rakuten </li>
+	<li>	E2OPEN</li>
+	<li>	Zebra Technologies </li>
+	<li>	Informatica</li>
+	<li>	Perfios Software Solutions Pvt. Ltd.</li>
+	<li>	Deloitte</li>
+	<li>	Unisys</li>
+	<li>	Datagres Technologies</li>
+</ol>
+
+</div>
+
+<div>
+	
+	
+	
+	<span style="position:absolute;top:100px;left:450px;">
+			CLICK HERE TO ADD ANOTHER ROW->
+		<INPUT type="button" value="ADD ROW" onclick="addRow('table1')"
+			style="background-color:#EAEDED;border-color:#808B96  " />
+	</span>	
+	
+	<span style="position:absolute;top:150px;left:450px;font-size:20px;">
+		Please fill-in the details in the below table
+	</span>
+	
+	<table id="table1" border="2" cellspacing="0" cellpadding="2px">
+	
+
+	    <tr>
+		
+			<th colspan="5" height="50px"><b>INTERNSHIP DETAILS<b></th>
+		
+		</tr>
+        
+		<tr>
+			
+			<th height="30px">SEMESTER</th>
+			<th height="30px">COMPANY NAME</th>
+			<th height="30px">STIPEND</th>
+			<th height="30px">DURATION</th>
+			
+        </tr>
+		
+		<tr id="row1">
+			
+			<th>
+				<input type="text"/>
+			</th>
+			<th>
+				<input type="text"/>
+			</th>
+			<th>
+				<input type="text"/>
+			</th>
+			<th>
+				<input type="text"/>
+			</th>	
+		
+		</tr>
+		<tr id="row2">
+			
+			<th>
+				<input type="text"/>
+			</th>
+			<th>
+				<input type="text"/>
+			</th>
+			<th>
+				<input type="text"/>
+			</th>
+			<th>
+				<input type="text"/>
+			</th>	
+		
+		</tr>
+		<tr id="row3">
+			
+			<th>
+				<input type="text"/>
+			</th>
+			<th>
+				<input type="text"/>
+			</th>
+			<th>
+				<input type="text"/>
+			</th>
+			<th>
+				<input type="text"/>
+			</th>	
+		
+		</tr>
+	
+	</table>
+
+</div>	
+
+</body>
+
+</html>
